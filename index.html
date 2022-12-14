@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/cssIndex/style.css">
+    <title>Miguel Fullstack</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+        <div class="container">
+        
+            <a href="#" class="navbar-brand"><strong>Miguel</strong></a>
+    
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-movil" aria-controls="menu-movil" aria-expanded="false" aria-label="Desplegar menú de navegación"><span class="navbar-toggler-icon"></span></button>
+        
+            <div class="collapse navbar-collapse" id="menu-movil">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#aboutme" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#proyects" class="nav-link">Proyects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+       </nav>
+  
+
+       <div class="hero">
+        <img src="images/pexels-pixabay-270404.jpg" alt="">
+       </div>
+
+
+  <div>
+
+  </div>
+
+
+
+    
+</div>
+<div class="pt-5 contenedor" id="aboutme">
+    <div class="aboutme">
+<h1>Who am i?</h1>
+<p class="text">Hello, i'm Miguel Colmenarez.</p>
+<p class="text">I'm a student of systems engineer, i'm 19 years old, i'm a 
+  junior programmer</p>
+</div>
+
+
+<h2 id="skills">Skills</h2> <!--Proyectos pendientes-->
+<div class="row row-cols-1 row-cols-md-2 g-2">
+    <div class="col">
+      <div class="card text-bg-dark">
+        <div class="iconos">
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-python"></i>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Programming Languages</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+       <div class="iconos">
+        <i class="fa-brands fa-node-js"></i>
+       </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Back-End</h5>
+        </div>
+    </div>
+    </div>
+    <div class="col col-md-12 g-12 ">
+      <div class="card text-bg-dark">
+        <div class="iconos">
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-bootstrap"></i>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Front-End</h5>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!--Proyectos-->
+<div id="proyects">
+<section class="proyectos py-4">
+  <div class="container">
+      <h2 class="display-4 fw-bold text-center pb-4">My Proyects</h2>
+      <div class="row text-md-center ">
+          <article class="mb-lg-0 mb-3 col-12 col-md-4 col-lg-4 ">
+              <div class="card text-bg-dark">
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto 1</h5>
+                    <p class="card-text">This is a page about Buying and selling real estate with mobile first design</p>
+                    <a target="_blank" href="https://stellular-cannoli-c58adb.netlify.app/" class="btn btn-light" rel="noopener noreferrer">Ver Proyecto</a>
+                  </div>
+                </div>
+          </article>
+          <article class="mb-lg-0 mb-3 col-12 col-md-4 col-lg-4">
+              <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto 2</h5>
+                    <p class="card-text">This one is a Blog of coffe with mobile first design too, though this dont have JavaScript</p>
+                    <a href="https://vermillion-kitsune-27744e.netlify.app/" target="_blank" class="btn btn-dark" rel="noopener noreferrer">Ver Proyecto</a>
+                  </div>
+                </div>
+          </article>
+          <article class="mb-lg-0 mb-3 col-12 col-md-4 col-lg-4">
+              <div class="card text-center text-bg-dark">
+                  <div class="card-body">
+                    <h5 class="card-title">Proyecto 3</h5>
+                    <p class="card-text">This is about a conference, this one don't have mobile first design though this dont have JavaScript</p>
+                    <a target="_blank" href="https://jolly-beignet-baf9ce.netlify.app/" class="btn btn-light" rel="noopener noreferrer">Ver Proyecto</a>
+                  </div>
+                </div>
+          </article>
+      </div>
+  </div>
+  </section>
+</div>
+
+
+<!--formulario-->
+
+<div class=" form text-center" id="contact">
+<h2>Contact</h2>
+<form action="" method="post" class="form" id="form">
+    <label for="Name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Name" required>
+
+    <label for="E-mail">E-mail</label>
+    <input type="email" name="email" id="email" placeholder="E-mail" required>
+
+    <label for="message">Message</label>
+    <textarea name="message" name="message" id="message"></textarea>
+    
+
+    <div class="d-grid gap-2 d-md-block">
+      <button class="btn btn-dark" type="button" id="submitButton">Send</button>
+    </div>
+</form>
+</div>
+
+<div class="container">
+<footer class="">
+<p class="">Miguel Colmenarez |2022 &copy;| <a href="https://github.com/eiosoy/proyectos" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github icono"></i></a> <!--nombre de pagina que tambien va arriba--></p>
+</footer>
+</div>
+
+
+
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/c988bc5df1.js" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
