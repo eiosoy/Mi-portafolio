@@ -21,7 +21,7 @@
                     <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#aboutme" class="nav-link">About me</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#proyects" class="nav-link">Proyects</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -46,7 +46,7 @@
     <div class="aboutme">
 <h1>Who am i?</h1>
 <p class="text">Hello, i'm Miguel Colmenarez.</p>
-<p class="text">I'm a student of systems engineer, i'm 19 years old, i'm a 
+<p class="text">I'm a system engineering student, i'm 19 years old, i'm a 
   junior programmer</p>
 </div>
 
@@ -88,63 +88,60 @@
     </div>
 </div>
 
-
-<!--Proyectos-->
-<div id="proyects">
-<section class="proyectos py-4">
-  <div class="container">
-      <h2 class="display-4 fw-bold text-center pb-4">My Proyects</h2>
-      <div class="row text-md-center ">
-          <article class="mb-lg-0 mb-3 col-12 col-md-4 col-lg-4 ">
-              <div class="card text-bg-dark">
-                  <div class="card-body">
-                    <h5 class="card-title">Proyecto 1</h5>
-                    <p class="card-text">This is a page about Buying and selling real estate with mobile first design</p>
-                    <a target="_blank" href="https://stellular-cannoli-c58adb.netlify.app/" class="btn btn-light" rel="noopener noreferrer">Ver Proyecto</a>
-                  </div>
-                </div>
-          </article>
-          <article class="mb-lg-0 mb-3 col-12 col-md-4 col-lg-4">
-              <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Proyecto 2</h5>
-                    <p class="card-text">This one is a Blog of coffe with mobile first design too, though this dont have JavaScript</p>
-                    <a href="https://vermillion-kitsune-27744e.netlify.app/" target="_blank" class="btn btn-dark" rel="noopener noreferrer">Ver Proyecto</a>
-                  </div>
-                </div>
-          </article>
-          <article class="mb-lg-0 mb-3 col-12 col-md-4 col-lg-4">
-              <div class="card text-center text-bg-dark">
-                  <div class="card-body">
-                    <h5 class="card-title">Proyecto 3</h5>
-                    <p class="card-text">This is about a conference, this one don't have mobile first design though this dont have JavaScript</p>
-                    <a target="_blank" href="https://jolly-beignet-baf9ce.netlify.app/" class="btn btn-light" rel="noopener noreferrer">Ver Proyecto</a>
-                  </div>
-                </div>
-          </article>
+<h2>Projects</h2>
+<div id="projects">
+  <section class="proyectos py-4">
+    <div class="card-group">
+      <div class="card">
+        <img src="/images/bienes-raices.png" class="card-img-top" alt="Bienes raices">
+        <div class="card-body">
+        <h5 class="card-title">Project 1</h5>
+        <p class="card-text">This is a page about Buying and selling real estate with a mobile first design, this don't contains JavaScript</p>
+        <a target="_blank" href="https://stellular-cannoli-c58adb.netlify.app/" class="btn btn-dark" rel="noopener noreferrer">See Project</a>
       </div>
-  </div>
+      </div>
+      <div class="card">
+      <img src="/images/Blog-cafe.png" class="card-img-top" alt="Blog de café">
+      <div class="card-body">
+        <h5 class="card-title">Project 2</h5>
+          <p class="card-text">This one is a Blog of coffe with a mobile first design too, this also doesn't contains JavaScript</p>
+          <a href="https://vermillion-kitsune-27744e.netlify.app/" target="_blank" class="btn btn-dark" rel="noopener noreferrer">See Project</a>
+      </div>
+      </div>
+      <div class="card">
+        <img src="./images/cursos-GDLW.png" class="card-img-top" alt="Cursos de programación">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">This is about a conference, this one don't have mobile first design and don't contains JavaScript neither</p>
+          <a href="https://vermillion-kitsune-27744e.netlify.app/" target="_blank" class="btn btn-dark" rel="noopener noreferrer">See Project</a>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 
 
 <!--formulario-->
 
-<div class=" form text-center" id="contact">
+<div class="form text-center" id="contact">
 <h2>Contact</h2>
-<form action="" method="post" class="form" id="form">
-    <label for="Name">Name</label>
-    <input type="text" name="name" id="name" placeholder="Name" required>
+<form action="https://formspree.io/f/mwkjejnp" method="post" class="form" name="form">
+  <label>Name</label>
+    <input type="text" class="userName" name="username" placeholder="Name" required>
+    <span class="error"></span>
+  
+    <label>E-mail</label>
+    <input type="email" class="email" name="email" placeholder="E-mail" required>
+    <span class="error"></span>
 
-    <label for="E-mail">E-mail</label>
-    <input type="email" name="email" id="email" placeholder="E-mail" required>
 
-    <label for="message">Message</label>
-    <textarea name="message" name="message" id="message"></textarea>
+
+    <label class="message">Message</label>
+    <textarea name="message" name="message"></textarea>
     
 
     <div class="d-grid gap-2 d-md-block">
-      <button class="btn btn-dark" type="button" id="submitButton">Send</button>
+      <button class="btn btn-dark" type="button" id="button">Send</button>
     </div>
 </form>
 </div>

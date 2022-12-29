@@ -1,33 +1,41 @@
-const form = document.getElementById('form')
-const button = document.getElementById('submitButton')
-
-const name = document.getElementById('name')
-const email = document.getElementById('email')
+const Name = document.querySelector('[name=username]');
+const email = document.querySelector('[name=email]');
 
 
-const formIsValid = {
-    name: false,
-    email: false,
+const emptyField = (e) => {
+    const field = e.target
+    const value = e.target.value;
+    if (value.length === 0) {
+        field.classList.add("invalid")
+        field.nextElementSibling.classList.add("error")
+        field.nextElementSibling.innerText = `${field.name} is required`
+    }else {
+        field.classList.remove("invalid")
+        field.nextElementSibling.classList.remove("error")
+        field.nextElementSibling.innerText = ""
+    }
 }
 
-form.addEventListener('submit', (e) =>{
-    e.preventDefault()
-    validateForm()
-})
-
-name.addEventListener('change', (e) =>{
-    if(e.target.value.trim().length > 0) 
-    formIsValid.name = true
-    })
-
-email.addEventListener('change', (e) =>{
-    if(e.target.value.trim().length > 0) 
-    formIsValid.email = true
-})
-
-const validateForm = () =>{
-    const formValues = Object.values(formIsValid)
-    const valid = formValues.findIndex(value => value == false)
-    if(valid == -1) form.submit()
-    else alert('Invalid form')
+Name.addEventListener('blur', function (e) {
+const field = e.target
+const data = e.target.value
+if(data === 0){
+field.classList.add('invalid')
+field.nextElementSibling.classList.add('error')
+field.nextElementSibling.innerText = "Name is required"
+} else {
+    field.classList.remove('invalid')
+    field.nextElementSibling.classList.remove('error')
+    field.nextElementSibling.innerText = ""
 }
+})
+
+/*const validateEmailFormat = e => {
+    const field = e.target;
+    const regEx = RegExp('/^[/w-\.]+@([\w-]+\.)+[\w.]{2,4}$/')
+    console.log(regEx.test(field.value))
+}*/
+
+
+Name.addEventListener('blur', emptyField);
+//validateEmailFormat.addEventListener('blur', emptyField);

@@ -66,7 +66,6 @@ form {
 }
 label {
   display: block;
-  justify-content:flex-start;
 }
 input {
   width: 50%;
@@ -74,9 +73,17 @@ input {
 }
 textarea {
   width: 50%;
-
 }
-
+.userName {
+  display: block;
+  padding-bottom: 5px;
+  margin-left: 25%;
+}
+.error {
+  display: flex;
+  margin-bottom: 1rem;
+  padding-left: 41%;
+}
 
 
 /*Footer*/
