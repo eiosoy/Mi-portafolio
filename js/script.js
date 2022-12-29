@@ -1,41 +1,42 @@
 const Name = document.querySelector('[name=username]');
 const email = document.querySelector('[name=email]');
 
-
-const emptyField = (e) => {
-    const field = e.target
-    const value = e.target.value;
-    if (value.length === 0) {
+const setErrors = (message, field, isError = true) => {
+    if(isError){
         field.classList.add("invalid")
         field.nextElementSibling.classList.add("error")
-        field.nextElementSibling.innerText = `${field.name} is required`
-    }else {
-        field.classList.remove("invalid")
-        field.nextElementSibling.classList.remove("error")
+        field.nextElementSibling.innerText = message;
+    } else {
+        field.classList.remove('invalid')
+        field.nextElementSibling.classList.remove('error')
         field.nextElementSibling.innerText = ""
     }
 }
 
-Name.addEventListener('blur', function (e) {
-const field = e.target
-const data = e.target.value
-if(data === 0){
-field.classList.add('invalid')
-field.nextElementSibling.classList.add('error')
-field.nextElementSibling.innerText = "Name is required"
-} else {
-    field.classList.remove('invalid')
-    field.nextElementSibling.classList.remove('error')
-    field.nextElementSibling.innerText = ""
+
+const emptyField = (message, e) => {
+    const field = e.target
+    const value = e.target.value;
+    if (value.length === 0) {
+        setErrors(message, field)
+    }else {
+        setErrors("", field, false)
+    }
 }
-})
 
-/*const validateEmailFormat = e => {
+
+const validateEmail = e =>{
     const field = e.target;
-    const regEx = RegExp('/^[/w-\.]+@([\w-]+\.)+[\w.]{2,4}$/')
-    console.log(regEx.test(field.value))
-}*/
+    const data = e.target.value;
+    const regEx = new RegExp (/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/);
+    if(data.trim().length > 5 && !regEx.test(data)){
+        setErrors("Please enter a valid email", field)
+    } else {
+        setErrors("", field, false)
+    }
+}
 
 
-Name.addEventListener('blur', emptyField);
-//validateEmailFormat.addEventListener('blur', emptyField);
+Name.addEventListener('blur', (e) => emptyField("Name is required", e));
+email.addEventListener('blur', (e) => emptyField("Please enter a valid email", e));
+email.addEventListener('input', validateEmail);
