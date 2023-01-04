@@ -1,5 +1,6 @@
 const Name = document.querySelector('[name=username]');
 const email = document.querySelector('[name=email]');
+const form = document.querySelector('[name=form]')
 
 const setErrors = (message, field, isError = true) => {
     if(isError){
@@ -40,3 +41,6 @@ const validateEmail = e =>{
 Name.addEventListener('blur', (e) => emptyField("Name is required", e));
 email.addEventListener('blur', (e) => emptyField("Please enter a valid email", e));
 email.addEventListener('input', validateEmail);
+
+
+form.submit();
