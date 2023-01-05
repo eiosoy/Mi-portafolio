@@ -17,7 +17,7 @@ body{
   width: 90%;
   margin: 0 auto;
 }
-.conteiner{
+.container{
   width: 95%;
   max-width:120rem;
   margin: 0 auto;
@@ -27,7 +27,7 @@ body{
   margin-bottom: 2rem;
   line-height: 1.5;
 }
-/*Primera parte*/
+/* Parte Superior */
 h1,h2 {
   display: flex;
   justify-content: center;
@@ -41,6 +41,14 @@ h2 {
   width: 100%;
   height: 30rem;  
 }
+.resume {
+  display: flex;
+  padding-left: 4px;
+  color: #212529;
+}
+a:hover {
+  color: #212529;
+}
 /* Iconos */
 .iconos {
   display: flex;
@@ -48,7 +56,7 @@ h2 {
   justify-content: space-evenly;
 }
 
-/*  parrafo about me*/
+/* parrafo about me */
 p {
   display: flex;
   text-align: center;
@@ -82,11 +90,16 @@ textarea {
 .error {
   display: flex;
   margin-bottom: 1rem;
-  padding-left: 41%;
+  justify-content: center;
 }
 
+.error-email {
+  display: flex;
+  margin-bottom: 1rem;
 
-/*Footer*/
+}
+
+/* Footer */
 footer{
   display: flex;
   justify-content: center;
