@@ -1,3 +1,16 @@
+/*---------------
+Rewriting Bootstrap
+-----------------*/
+
+.card {
+  -webkit-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
+  -moz-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
+  box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
+}
+
+/*-------------
+Style and Design
+*/
 html {
     box-sizing: border-box;
 }
