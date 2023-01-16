@@ -9,14 +9,14 @@
     <title>Miguel Fullstack</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+    <nav class="navbar navbar-dark bg-dark-navbar navbar-expand-md fixed-top">
         <div class="container">
         
             <a href="#" class="navbar-brand"><strong>Miguel</strong></a>
     
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-movil" aria-controls="menu-movil" aria-expanded="false" aria-label="Desplegar menú de navegación"><span class="navbar-toggler-icon"></span></button>
         
-            <div class="collapse navbar-collapse" id="menu-movil">
+            <div class="collapse navbar-collapse menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#aboutme" class="nav-link">About me</a></li>
@@ -27,21 +27,19 @@
             </div>
         </div>
        </nav>
-  
-
-       <div class="hero">
-        <img src="images/pexels-pixabay-270404.jpg" alt="">
-       </div>
 
 
   <div>
 
   </div>
-
-
-
-    
 </div>
+<div class="hero">
+  <img src="images/hero2.jpg" alt="code of Programming">
+</div>
+
+
+
+<div class="content">
 <div class="pt-5 contenedor" id="aboutme">
     <div class="aboutme">
 <h1>Who am i?</h1>
@@ -55,60 +53,90 @@
 <h2 id="skills">Skills</h2>
 <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
-    <div class="card border-dark">
-      <div class="iconos">
+    <div class="container-long">
+    <div class="card bg-dark">
+      <h5 class="card-title center">Programming Languages</h5>
+      <div class="icons">
         <i class="fa-brands fa-js"></i>
         <i class="fa-brands fa-python"></i>
         </div>
       <div class="card-body">
-        <h5 class="card-title">Programming Languages</h5>
+        <div class="lang-name">
+        <p>JavaScript</p>
+        <p>Python</p>
+      </div>
       </div>
     </div>
   </div>
+  </div>
+
   <div class="col">
-    <div class="card border-dark">
-      <div class="iconos">
+    <div class="container-short">
+    <div class="card bg-dark">
+      <h5 class="card-title center">Back-End</h5>
+      <div class="icons single">
         <i class="fa-brands fa-node-js"></i>
         </div>
       <div class="card-body">
-        <h5 class="card-title center">Back-End</h5>
+        <p>nodeJS</p>
       </div>
     </div>
   </div>
+  </div> 
+
   <div class="col">
-    <div class="card border-dark ">
-      <div class="iconos">
+    <div class="container-frameworks">
+    <div class="card bg-dark">
+      <h5 class="card-title center">Frameworks</h5>
+      <div class="icons">
         <i class="fa-brands fa-bootstrap"></i>
         </div>
       <div class="card-body">
-        <h5 class="card-title">Frameworks</h5>
+        <p>Bootstrap</p>
       </div>
     </div>
   </div>
+  </div>
+
   <div class="col">
-    <div class="card border-dark">
-      <div class="iconos">
+    <div class="container-long_front">
+    <div class="card bg-dark card-front">
+      <h5 class="card-title center">Front-end</h5>
+      <div class="icons">
         <i class="fa-brands fa-html5"></i>
         <i class="fa-brands fa-css3-alt"></i>
           </div>
-      <div class="card-body">
-        <h5 class="card-title">Front-End</h5>
+      <div class="card-body card-front">
+        <div class="card-body">
+          <div class="front-name">
+          <p>HTML5</p>
+          <p>CSS3</p>
+        </div>
       </div>
     </div>
+  </div>
   </div>
 </div>
 
 
-<h2>Projects</h2>
-<div id="projects">
+<h2 class="title-programming">Why do I like programming?</h2>
+<section>
+<p class="content-programming">I started programming mainly out of curiosity. I wanted to know how apps were made or how pages were made, so I made a research, and I found some videos on how to program a page. My cousin, who is a Senior Programmer in an startup company in Uruguay, helped me out and recommended me to learn Python because it's the easiest language to learn. Then I went on learning HTML5, CSS3 and JavaScript. Now I am curious about servers and NodeJs</p>
+</section>
+
+<div class="project-title">
+<h2 class="title">Projects</h2>
+
+<div class="content-project" id="projects">
   <div>
-    <p>Here are some projects that i did but no one contains JavaScript code and are a mobile first design</p>
+    <p>Here are some projects that i did, all are a mobile first design</p>
     <p>You can check my resume <a class="resume" href="https://docs.google.com/document/d/1jKU51x-4Zenh65y6xZ1ZMCTIO1ffLIF1/edit?usp=sharing&ouid=103953328832651350323&rtpof=true&sd=true">Here</a></p> 
   </div>
-  <section class="proyectos py-4">
+</div>
+  <section class="proyectos py-4 project-card">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
-        <div class="card h-100 border-dark">
+        <div class="card h-100 bg-dark">
           <img src="/images/bienes-raices.png" class="card-img-top" alt="Bienes raices">
           <div class="card-body">
             <h5 class="card-title">Bienes Raices</h5>
@@ -118,57 +146,39 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 border-dark">
+        <div class="card h-100 bg-dark">
           <img src="/images/Blog-cafe.png" class="card-img-top" alt="Blog de café">
           <div class="card-body">
             <h5 class="card-title center">Blog de café</h5>
-            <p class="card-text">This one is a Blog of coffee.</p>
-      <a href="https://vermillion-kitsune-27744e.netlify.app/" target="_blank" class="mt-4 btn btn-dark" rel="noopener noreferrer">See Project</a>
+            <p class="card-text">This is a Blog about coffee.</p>
+      <a href="https://vermillion-kitsune-27744e.netlify.app/" target="_blank" class="mt-4 btn btn-dark btn-project" rel="noopener noreferrer">See Project</a>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 border-dark">
+        <div class="card h-100 bg-dark">
           <img src="./images/cursos-GDLW.png" class="card-img-top" alt="Cursos de programación">
           <div class="card-body">
-            <h5 class="card-title ">GDLWEBCAM</h5>
-            <p class="card-text center">This is about a programming conference.</p> 
+            <h5 class="card-title">GDLWEBCAM</h5>
+            <p class="card-text center">This is a page about a programming conference.</p> 
             <a href="https://jolly-beignet-baf9ce.netlify.app/" target="_blank" class="mt-2 btn btn-dark" rel="noopener noreferrer">See Project</a>
           </div>
         </div>
       </div>
     </div>
-
-
-<!--formulario-->
-
-<div class="form text-center" id="contact">
-<h2>Contact</h2>
-<form action="https://formspree.io/f/mwkjejnp" method="post" class="form" name="form">
-  <label>Name</label>
-    <input type="text" class="userName" name="username" placeholder="Name" required>
-    <span class="error"></span>
-  
-    <label>E-mail</label>
-    <input type="email" class="email" name="email" placeholder="E-mail" required>
-    <span class="error-email"></span>
-
-
-
-    <label class="message">Message</label>
-    <textarea name="message" name="message"></textarea>
-    
-
-    <div class="d-grid gap-2 d-md-block">
-      <button class="btn btn-dark" type="submit"  id="button" name="button">Send</button>
-    </div>
-</form>
+  </div>
 </div>
 
+<h2>Contact</h2>
+<p>Email: colmenarezmiguel24@gmail.com</p>
+<p>Number: +58 414 0412 429</p>
+
+
 <div class="container">
-<footer class="">
-<p class="">Miguel Colmenarez |2022 &copy;| <a href="https://github.com/eiosoy" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github icono"></i></a> <!--nombre de pagina que tambien va arriba--></p>
-</footer>
+  <footer class="">
+  <p class="">Miguel Colmenarez | 2022 &copy; | <a href="https://github.com/eiosoy" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github icon-gh footer-padding"></i></a>|<a href="https://www.linkedin.com/in/miguel-colmenarez-179431210/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in icon-in footer-padding"></i></a> <!--nombre de pagina que tambien va arriba--></p>
+  </footer>
+  </div>
 </div>
 
 

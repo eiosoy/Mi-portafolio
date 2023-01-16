@@ -1,11 +1,30 @@
 /*---------------
-Rewriting Bootstrap
+Editing Bootstrap
 -----------------*/
-
+.bg-dark-navbar {
+  --bs-bg-opacity: 1;
+  background-color: #020408!important;
+}
+.bg-dark-navbar--active {
+  --bs-bg-opacity: 1;
+  background-color: #0a1729!important;
+} 
 .card {
   -webkit-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
   -moz-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
   box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
+  --bs-card-spacer-y: 0rem;
+}
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: #0a1729!important;
+}
+.btn-dark {
+  --bs-btn-bg: rgba(0,0,0,1);
+  --bs-btn-border-color: rgba(0,0,0,1);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #424649;
+  --bs-btn-hover-border-color: #343131;
 }
 
 /*-------------
@@ -23,7 +42,9 @@ html {
   }
 }
 body{
-  background-color: #f2f2f2;
+  background: rgb(131,58,180);
+  background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(10,23,41,1) 50%, rgba(0,0,0,1) 100%);
+  color: #ffffff;
 }
 /* Globales */
 .contenedor {
@@ -32,7 +53,7 @@ body{
 }
 .container{
   width: 95%;
-  max-width:120rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 .section {
@@ -40,7 +61,10 @@ body{
   margin-bottom: 2rem;
   line-height: 1.5;
 }
-/* Parte Superior */
+.content {
+  display: flex;
+}
+/* Superior Part */
 h1,h2 {
   display: flex;
   justify-content: center;
@@ -54,23 +78,22 @@ h2 {
   width: 100%;
   height: 30rem;  
 }
-.resume {
-  display: flex;
-  padding-left: 4px;
-  color: #212529;
-}
 a:hover {
-  color: #212529;
+  color: #833ab4;
 }
-/* Iconos */
-.iconos {
+
+/* Icons */
+.icons {
   display: flex;
   font-size: 4rem;
   justify-content: space-evenly;
   margin-top: 1px;
 }
+.single {
+  padding: 0 10rem 0 8rem;
+}
 
-/* parrafo about me */
+/* p about me */
 p {
   display: flex;
   text-align: center;
@@ -78,43 +101,107 @@ p {
   padding: 1rem;
   line-height: 1.3rem;
 }
-
+ 
 /* Card of the skills */
+.container-long {
+  display: flex;
+  margin-left: 25.1%;
+  width: 43%;
+  flex-direction: column;
+}
+@media (min-width: 728px) {
+  .container-long {
+    margin-left: 25%;
+    width: 52.2%;
+  }
+}
+.lang-name {
+  display: flex;
+  justify-content: space-around;
+}
+.container-short {
+  display: flex;
+  margin-left: 24%;
+  width: 43%;
+}
+@media (min-width: 768px) {
+  .container-short {
+    margin-left: 25%;
+    width: 49.2%;
+  }
+}
+.container-long_front {
+  display: flex;
+  width: 43.2%;
+  margin-left: 23.8%;
+  flex-direction: column;
+}
+.front-name {
+  display: flex;
+  justify-content:space-around;
+}
+@media (min-width: 768px) {
+  .container-long_front {
+    width: 49.8%;
+    margin-left: 24%;
+  }
+}
+.container-frameworks {
+  display: flex;
+  margin-left: 24%;
+  width: 43%;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .container-frameworks{
+  margin-left: 25%;
+  width: 52%;
+  }
+}
 .center {
   display: flex;
   justify-content: center;
 }
 
-/* Formulario */
-form {
-  padding: 2rem;
-  border: 1px solid black;
-}
-label {
-  display: block;
-}
-input {
-  width: 50%;
-  height: 25%;
-}
-textarea {
-  width: 50%;
-}
-.userName {
-  display: block;
-  padding-bottom: 5px;
-  margin-left: 25%;
-}
-.error {
+/* Why I do like Programming */
+.title-programming {
   display: flex;
-  margin-bottom: 1rem;
-  justify-content: center;
+  margin-left: 26%;
+}
+.content-programming {
+  margin-left: 62%;
+  width: 89%;
 }
 
-.error-email {
+/* Projects */
+.resume {
   display: flex;
-  margin-bottom: 1rem;
+  padding-left: 4px;
+  color: #ffffff;
+}
 
+.projects {
+  display: block;
+}
+
+.content-project {
+  display: flex;
+  margin-left: -24.5%;
+  width: 53%;
+}
+.project-card{    
+  display: flex;
+  margin-left: -85.3%;
+  flex-direction: column;
+  width: 173%;
+}
+.btn{
+  margin-bottom: 12px;
+}
+.title {
+  display: flex;
+  margin-left: -96.9%;
+  padding-top: 50%;
 }
 
 /* Footer */
@@ -122,9 +209,16 @@ footer{
   display: flex;
   justify-content: center;
 }
-.icono {
+.footer-padding{
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.icon-gh {
   margin-top: 3px;
   cursor: pointer;
   color: black;
+}
+.icon-in {
+color: white;
 }
 
