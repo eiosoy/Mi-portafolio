@@ -90,7 +90,12 @@ a:hover {
   margin-top: 1px;
 }
 .single {
-  padding: 0 10rem 0 8rem;
+  padding: 4%;
+}
+@media (min-width: 768px) {
+  .single {
+    padding: 0 10rem 0 8rem;
+  }
 }
 
 /* p about me */
@@ -166,42 +171,81 @@ p {
 /* Why I do like Programming */
 .title-programming {
   display: flex;
-  margin-left: 26%;
+  margin-left: 40%;
+  width: 21%;
+}
+@media (min-width: 768px) {
+  .title-programming {
+    display: flex;
+    margin-left: 41%;
+  }
 }
 .content-programming {
-  margin-left: 62%;
+  margin-left: 4%;
   width: 89%;
+}
+@media (min-width: 768px) {
+  .content-programming {
+    margin-left: 62%;
+    width: 89%;
+  }
 }
 
 /* Projects */
 .resume {
   display: flex;
+  padding-left: 0px;
+  color: #ffffff;
+  padding-top: 14%;
+}
+@media (min-width: 768px) {
+  .resume{
+  display: flex;
   padding-left: 4px;
   color: #ffffff;
+  padding-top: 0%;
+  }
 }
-
 .projects {
   display: block;
 }
-
 .content-project {
   display: flex;
-  margin-left: -24.5%;
-  width: 53%;
+  margin-left: 20.5%;
+  width: 57%;
+}
+@media (min-width: 768px) {
+  .content-project {
+    display: flex;
+    margin-left: -24.5%;
+    width: 53%;
+  }
 }
 .project-card{    
-  display: flex;
-  margin-left: -85.3%;
-  flex-direction: column;
-  width: 173%;
+  display: block;
+}
+@media (min-width: 768px) {
+  .project-card {
+    display: flex;
+    margin-left: -85.3%;
+    flex-direction: column;
+    width: 173%;
+  }
 }
 .btn{
   margin-bottom: 12px;
 }
 .title {
   display: flex;
-  margin-left: -96.9%;
-  padding-top: 50%;
+  margin-left: -2.9%;
+  padding-top: 11%;
+}
+@media (min-width: 768px) {
+  .title {
+    display: flex;
+    margin-left: -97.9%;
+    padding-top: 50%;
+  }
 }
 
 /* Footer */
