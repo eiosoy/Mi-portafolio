@@ -1,3 +1,4 @@
+
 /*---------------
 Editing Bootstrap
 -----------------*/
@@ -13,7 +14,6 @@ Editing Bootstrap
   -webkit-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
   -moz-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
   box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.37);
-  --bs-card-spacer-y: 0rem;
 }
 .bg-dark {
   --bs-bg-opacity: 1;
@@ -89,15 +89,6 @@ a:hover {
   justify-content: space-evenly;
   margin-top: 1px;
 }
-.single {
-  padding: 4%;
-}
-@media (min-width: 768px) {
-  .single {
-    padding: 0 10rem 0 8rem;
-  }
-}
-
 /* p about me */
 p {
   display: flex;
@@ -109,15 +100,16 @@ p {
  
 /* Card of the skills */
 .container-long {
-  display: flex;
-  margin-left: 25.1%;
-  width: 43%;
-  flex-direction: column;
+  display: block;
+  margin-left: 19%;
+  width: 60%;
 }
 @media (min-width: 728px) {
   .container-long {
-    margin-left: 25%;
-    width: 52.2%;
+    display: flex;
+    margin-left: 25.1%;
+    width: 43%;
+    flex-direction: column;
   }
 }
 .lang-name {
@@ -125,47 +117,47 @@ p {
   justify-content: space-around;
 }
 .container-short {
-  display: flex;
-  margin-left: 24%;
-  width: 43%;
+  display: block;
+  margin-left: 19%;
+  width: 60%;
 }
 @media (min-width: 768px) {
   .container-short {
     margin-left: 25%;
-    width: 49.2%;
+    width: 43%;
   }
 }
 .container-long_front {
-  display: flex;
-  width: 43.2%;
-  margin-left: 23.8%;
-  flex-direction: column;
+  display: block;
+  margin-left: 19%;
+  width: 60%;
+}
+@media (min-width: 768px) {
+  .container-long_front {
+    width: 43%;
+    margin-left: 25%;
+  }
 }
 .front-name {
   display: flex;
   justify-content:space-around;
 }
-@media (min-width: 768px) {
-  .container-long_front {
-    width: 49.8%;
-    margin-left: 24%;
-  }
-}
+
 .container-frameworks {
-  display: flex;
-  margin-left: 24%;
-  width: 43%;
-  flex-direction: column;
+  display: block;
+  margin-left: 19%;
+  width: 60%;
 }
 @media (min-width: 768px) {
   .container-frameworks{
   margin-left: 25%;
-  width: 52%;
+  width: 43%;
   }
 }
 .center {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 /* Why I do like Programming */
