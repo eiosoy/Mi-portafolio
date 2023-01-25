@@ -171,7 +171,7 @@ p {
 .resume {
   display: flex;
   color: #ffffff;
-  padding-left: 4px;
+  padding-left: 2.1px;
 }
 @media (min-width: 768px) {
   .resume{
